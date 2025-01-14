@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/8a26c7550f.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body
+        class="bg-[#2E294E] h-screen w-full min-h-[600px] min-w-full flex flex-col justify-center items-center gap-0 md:flex md:justify-center md:items-center md:gap-0">
+
+        <div class="w-[300px] md:w-[650px] text-center text-sm md:text-xl">
+                <h1
+                        class="border-2 md:border-2 border-black rounded-tl-3xl rounded-tr-3xl text-white text-2xl p-3 font-semibold md:text-5xl">
+                        Rock
+                        Paper
+                        Scissor</h1>
+                <p class="bg-black text-white text-center p-4 w-full md:text-base hidden md:block">Welcome to the
+                        classic game of
+                        Rock,
+                        Paper and Scissor </p>
+
+                <p class="bg-black text-white p-4 h-10 w-full flex justify-center items-center md:hidden">Hello and
+                        Welcome</p>
+
+                <p
+                        class="gameBroadcast bg-[#2E294E] md:h-[84px] border-2 md:border-2 border-black h-[76px] w-full p-3 text-white text-base md:text-xl flex justify-center items-center">
+                        Choose
+                        <span class="fa">&nbsp;&nbsp;&nbsp;&#xF255;</span>&nbsp;&nbsp;<span
+                                class="fa">&#xf256;</span>&nbsp;&nbsp;
+                        <span class="fa">&#xf257;</span>&nbsp;&nbsp; to play
+                </p>
+
+        </div>
+
+        <!-- //////////////////////////////////////////////////////////////////// -->
+
+        <div
+                class="bg-black w-[300px] h-[430px] flex justify-center items-center rounded-bl-3xl rounded-br-3xl md:flex-col md:w-[650px] md:h-[300px] md:rounded-bl-3xl md:rounded-br-3xl md:shadow-2xl">
+
+                <div
+                        class="flex flex-col justify-center items-center gap-10 w-40 h-[600px] md:w-[700px] md:h-40 md:flex-row md:justify-center md:items-center md:gap-16">
+
+                        <div class="flex flex-col-reverse justify-center items-center md:flex-row-reverse">
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <h1
+                                                class="lapScore my-2 size-16 md:size-20 bg-[#fb2223] font-bold rounded-none flex justify-center items-center text-5xl rounded-bl-2xl md:rounded-tr-2xl rounded-br-2xl md:rounded-bl-none border-t md:border-t-0 md:border-l border-black">
+                                                0</h1>
+                                </div>
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <img class="my-2 size-16 md:size-20 bg-[#fb2223] rounded-tl-2xl rounded-tr-2xl md:rounded-bl-2xl md:rounded-tr-none p-4"
+                                                src="./Img/laptop.webp" alt="">
+                                </div>
+                        </div>
+
+                        <div class="flex flex-col justify-center items-center gap-3 md:flex-row md:gap-4">
+
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <img id="lapRock"
+                                                class="lapRPS my-2 size-16 md:size-20 bg-[#c1da6d] p-4 rounded-full"
+                                                src="./Img/rock.webp" alt="">
+                                </div>
+
+                                <div class="size-16 md:size-20 flex justify-center items-center ">
+                                        <img id="lapPaper"
+                                                class="lapRPS my-2 size-16 md:size-20 bg-[#c76ca4] rounded-full p-4"
+                                                src="./Img/paper.webp" alt="">
+                                </div>
+
+                                <div class="size-16 md:size-20 flex justify-center items-center ">
+                                        <img id="lapScissor"
+                                                class="lapRPS my-2 size-16 md:size-20 bg-[#F6AE2D] rounded-full p-4"
+                                                src="./Img/scissor.webp" alt="">
+                                </div>
+                        </div>
+
+                </div>
+
+                <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+                <div
+                        class="flex flex-col justify-center items-center gap-10 w-40 h-[600px] md:w-[700px] md:h-40 md:flex-row md:justify-center md:items-center md:gap-16">
+
+                        <div class="flex flex-col-reverse justify-center items-center md:flex-row-reverse">
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <h1
+                                                class="userScore my-2 size-16 md:size-20 bg-[#40b8da] font-bold flex justify-center items-center text-5xl rounded-bl-2xl md:rounded-tr-2xl rounded-br-2xl md:rounded-bl-none border-t md:border-t-0 md:border-l border-black">
+                                                0</h1>
+                                </div>
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <img class="my-2 size-16 md:size-20 bg-[#40b8da] rounded-tl-2xl rounded-tr-2xl md:rounded-bl-2xl md:rounded-tr-none p-4"
+                                                src="./Img/user.webp" alt="">
+                                </div>
+                        </div>
+
+                        <div class="flex flex-col justify-center items-center gap-3 md:flex-row md:gap-4">
+
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <img id="userRock"
+                                                class="userRPS my-2 size-16 md:size-20 bg-[#c1da6d] rounded-full p-4 hover:rounded-3xl md:hover:rounded-3xl cursor-pointer"
+                                                src="./Img/rock.webp" alt="">
+                                </div>
+
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <img id="userPaper"
+                                                class="userRPS my-2 size-16 md:size-20 bg-[#c76ca4] rounded-full p-4 hover:rounded-3xl md:hover:rounded-3xl cursor-pointer"
+                                                src="./Img/paper.webp" alt="">
+                                </div>
+
+                                <div class="size-16 md:size-20 flex justify-center items-center">
+                                        <img id="userScissor"
+                                                class="userRPS my-2 size-16 md:size-20 bg-[#F6AE2D] rounded-full p-4 hover:rounded-3xl md:hover:rounded-3xl cursor-pointer"
+                                                src="./Img/scissor.webp" alt="">
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+        <script src="./src/rps.js"></script>
+</body>
+
+</html>
